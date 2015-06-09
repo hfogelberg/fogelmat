@@ -1,3 +1,8 @@
+#iron-router-progress {
+    background-color : green
+    box-shadow       : 0 0 5px gray;
+}
+
 .container{
 	margin-left: 20px;
 	margin-right: 20px;

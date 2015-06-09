@@ -10,3 +10,5 @@ coffeescript
 mizzao:bootstrap-3
 yasaricli:slugify
 mongodb-server-aggregation
+multiply:iron-router-progress
+mrt:jqbootstrapvalidation
