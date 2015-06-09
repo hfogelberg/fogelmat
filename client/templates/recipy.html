@@ -1,0 +1,15 @@
+<template name='recipyDetails'>
+	{{#each recipyList}}
+		{{> recipyDescription}}
+	{{/each}}
+</template>
+
+<template name='recipyDescription'>
+	<div class='page-header'>
+		<h1>{{title}}</h1>
+	</div>
+	<div class='comment'>{{comment}}</div>
+	<div class='ingrediences'>{{ingrediences}}</div>
+	<div class='description'>{{description}}</div>
+	<div class='tags'>{{tags}}</div>
+</template>
