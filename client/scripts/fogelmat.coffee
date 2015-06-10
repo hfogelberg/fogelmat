@@ -15,7 +15,6 @@ Template.addRecipy.events
         do ->
             tag = tag.trim()
             tag = tag.charAt(0).toUpperCase() + tag.substring(1)
-            alert tag
             if tag
                 taglist.push tag
 
@@ -24,4 +23,5 @@ Template.addRecipy.events
     Meteor.call 'createRecipyTags', taglist, (error) ->
     Meteor.call 'createRecipy', title, comment, ingrediences, description, taglist, slug, (error) ->
 
+    Router.go('recipies')
     return

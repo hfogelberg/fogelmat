@@ -1,9 +1,21 @@
 <template name='recipies'>
 	<h1>Recipies</h1>
 
-	{{#each recipyList}}
-		{{> recipy}}
-	{{/each}}
+	<div class='row'>
+		<div class='col-xs-2'>
+			<ul class='list list-group'>
+				{{#each tags}}
+					{{> tag}}
+				{{/each}}
+			</ul>
+		</div>
+
+		<div class='col-xs-10'>
+			{{#each recipyList}}
+				{{> recipy}}
+			{{/each}}
+		</div>
+	</div>
 </template>
 
 <template name='recipy'>
@@ -12,4 +24,9 @@
 		{{description}}
 		<div><a href="/recipy/{{_id}}">Läs mer</a></div>
 	</div>
+</template>
+
+
+<template name='tag'>
+	<li class='list-group-item'><a href='/recipies/{{name}}'>{{name}}</a></li>
 </template>

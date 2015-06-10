@@ -13,6 +13,5 @@ Install the following packages:
 * `meteor add mizzao:bootstrap-3`
 * `meteor add iron:router`
 * `meteor add yasaricli:slugify`
-* `mrt add mongodb-server-aggregation`
 * `meteor add multiply:iron-router-progress`
 * `meteor add mrt:jqbootstrapvalidation`
