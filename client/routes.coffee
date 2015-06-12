@@ -44,3 +44,9 @@ Router.map ->
   @route 'contact'
   
   return
+
+
+
+
+# waitOn: ->
+#   return [Meteor.subscribe('recipies'), Meteor.subscribe('tags')]

@@ -1,5 +1,5 @@
 README.md
-# Birdfood
+# Fogelmat
 
 ## About
 This is my first attempt to write a "real" application with Meteor.js.
