@@ -1,0 +1,32 @@
+<template name='editRecipy'>
+	<h1>Ändra</h1>
+	{{#each recipyList}}
+		<form class='editRecipy'>
+			<div class='form-group '>
+				<label for='title'>Rubrik</label>
+				<input type='text' class='form-control title' name='title' value='{{title}}'>
+			</div>
+			<div class='form-group '>
+				<label for='comment'>Kommentar</label>
+				<textarea class='form-control comment' rows='2' name='comment' >{{coment}}</textarea>
+			</div>
+
+			<div class='form-group '>
+				<label for='ingrediences'>Ingredienser</label>
+				<textarea class='form-control ingrediences' rows='5' name='ingrediences'>{{ingrediences}}</textarea>
+			</div>
+
+			<div class='form-group '>
+				<label for='description'>Beskriving</label>
+				<textarea class='form-control description' rows='5' name='description'>{{description}}</textarea>
+			</div>
+
+			<div class='form-group'>
+				<label for='tags'>Taggar</label>
+				<input type='text' class='form-control tags' name='tags' placeholder='Skilj åt med komma t.ex. Soppa, Varmrätt, Snabbmat'>
+			</div>
+			
+			<input type='button' class='btn btn-default' value='Spara'>
+		</form>
+	{{/each}}
+</template>

@@ -1,5 +1,20 @@
-accountsUIBootstrap3.setLanguage 'sv'
-  
+accountsUIBootstrap3.setLanguage('sv')
+
+Template.recipyDetails.events
+    'click .editRecipyBtn': (event, template)->
+        alert 'LCick'
+        Session.set 'title', title
+        Session.set 'comment', comment
+        Session.set 'ingrediences', ingrediences
+        Session.set 'description', description
+        Session.set 'tags', tags
+
+        alert Session.get('title')
+
+Template.editRecipy.events
+    'click .updateRecipyBtn': (event, template) ->
+        alert 'Update'
+
 Template.addRecipy.events
   'click .btn': (event, template) ->
     event.preventDefault

@@ -1,20 +1,21 @@
 <template name='recipies'>
-	<h1>Recipies</h1>
-
 	<div class='row'>
-		<div class='col-xs-3'>
-			<ul class='list list-group'>
+		<div class='col-xs-2'>
+			<ul>
 				{{#each tags}}
 					{{> tag}}
 				{{/each}}
 			</ul>
 		</div>
 
-		<div class='col-xs-9'>
+		<div class='col-xs-8'>
 			{{#each recipyList}}
 				{{> recipy}}
 			{{/each}}
 		</div>
+	</div>
+
+	<div class='col-xs-2'>
 	</div>
 </template>
 
@@ -22,11 +23,11 @@
 	<div class='well'>
 		<h2>{{title}}</h2>
 		{{description}}
-		<div><a href="/recipy/{{_id}}">Läs mer</a></div>
+		<div><a href="/recipy/{{slug}}">Läs mer</a></div>
 	</div>
 </template>
 
 
 <template name='tag'>
-	<li class='list-group-item'><a href='/recipies/{{name}}'>{{name}}</a></li>
+	<li class='list-unstyled text-info'><a href='/recipies/{{name}}'>{{name}}</a></li>
 </template>

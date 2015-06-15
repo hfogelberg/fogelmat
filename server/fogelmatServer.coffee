@@ -3,7 +3,7 @@
 
 Meteor.startup ->
   Meteor.publish "recipiesByTag", (tag) ->
-    Recipies.find {tags: tag}, {limit: 5}, {fields: {title: 1, comment: 1}}
+    Recipies.find {tags: tag}, {fields: {title: 1, comment: 1}}
     
   Meteor.publish "recipies", ->
     Recipies.find {}, {limit: 5}, {fields: {title: 1, comment: 1}}
@@ -11,8 +11,8 @@ Meteor.startup ->
   Meteor.publish "tags", ->
     RecipyTags.find()
 
-  Meteor.publish "recipy", (recipyId) ->
-    Recipies.find _id: recipyId
+  Meteor.publish "recipy", (slug) ->
+    Recipies.find slug: slug
 
 Meteor.methods  
   createRecipyTags: (tags) ->   

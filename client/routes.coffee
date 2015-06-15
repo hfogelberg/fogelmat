@@ -15,7 +15,6 @@ Router.map ->
       tags: ->
         RecipyTags.find()
 
-
   @route 'recipiesByTag',
     path: 'recipies/:tag',
     template: 'recipies'
@@ -26,20 +25,28 @@ Router.map ->
       @subscribe 'tags'
     data: 
       recipyList: ->
-        Recipies.find()
+        recipy = Recipies.find()
       tags: ->
         RecipyTags.find()
 
   @route 'recipy',
-    path: '/recipy/:_id'
+    path: '/recipy/:slug'
     template: 'recipyDetails'
     waitOn: ->
-      Meteor.subscribe 'recipy', @params._id
+      Meteor.subscribe 'recipy', @params.slug
+    data: recipyList: ->
+      Recipies.find()
+
+  @route 'editRecipy',
+    path: 'editRecipy/:slug',
+    template: 'editRecipy'
+    waitOn: ->
+      Meteor.subscribe 'recipy', @params.slug
     data: recipyList: ->
       Recipies.find()
 
   @route 'about'
-  
+
   @route 'addRecipy'
 
   @route 'contact'

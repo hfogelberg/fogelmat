@@ -13,7 +13,8 @@ roles
 accounts-password
 ian:accounts-ui-bootstrap-3
 twbs:bootstrap
-softwarerero:accounts-t9n
 accounts-google
 accounts-facebook
 accounts-twitter
+alethes:pages
+anti:i18n
