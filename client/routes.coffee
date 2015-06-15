@@ -3,11 +3,9 @@
 
 Router.configure layoutTemplate: 'layout'
 Router.map ->
-  @route 'home', path: '/'
-
-  @route 'about'
-
-  @route 'recipies',    
+  @route 'home', 
+    path: '/',
+    template: 'recipies'
     subscriptions:->
       @subscribe 'recipies'
       @subscribe 'tags'
@@ -16,6 +14,7 @@ Router.map ->
         Recipies.find()
       tags: ->
         RecipyTags.find()
+
 
   @route 'recipiesByTag',
     path: 'recipies/:tag',
@@ -39,6 +38,8 @@ Router.map ->
     data: recipyList: ->
       Recipies.find()
 
+  @route 'about'
+  
   @route 'addRecipy'
 
   @route 'contact'

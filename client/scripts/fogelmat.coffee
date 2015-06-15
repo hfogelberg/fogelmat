@@ -1,3 +1,5 @@
+accountsUIBootstrap3.setLanguage 'sv'
+  
 Template.addRecipy.events
   'click .btn': (event, template) ->
     event.preventDefault
