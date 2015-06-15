@@ -1,5 +1,7 @@
 {
   "packages": {
-    "mongodb-server-aggregation": {}
+    "mongodb-server-aggregation": {},
+    "accounts-ui-bootstrap-3": {},
+    "accounts-admin-ui-bootstrap-3": {}
   }
 }

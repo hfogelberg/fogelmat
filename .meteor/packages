@@ -7,8 +7,9 @@
 meteor-platform
 iron:router
 coffeescript
-mizzao:bootstrap-3
 yasaricli:slugify
 multiply:iron-router-progress
-mrt:jqbootstrapvalidation
-mongodb-server-aggregation
+roles
+accounts-password
+ian:accounts-ui-bootstrap-3
+twbs:bootstrap
