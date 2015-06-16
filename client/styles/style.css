@@ -59,3 +59,8 @@ i {
 .updateRecipyBtn {
 	margin-top: 20px;
 }
+
+.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+ }
