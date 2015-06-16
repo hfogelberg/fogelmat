@@ -9,7 +9,6 @@ iron:router
 coffeescript
 yasaricli:slugify
 multiply:iron-router-progress
-roles
 accounts-password
 ian:accounts-ui-bootstrap-3
 twbs:bootstrap
