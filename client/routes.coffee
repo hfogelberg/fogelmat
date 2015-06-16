@@ -42,6 +42,7 @@ Router.map ->
     template: 'editRecipy'
     waitOn: ->
       Meteor.subscribe 'recipy', @params.slug
+      Session.set 'slug', @params.slug
     data: recipyList: ->
       Recipies.find()
 

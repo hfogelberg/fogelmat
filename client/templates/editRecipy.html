@@ -8,7 +8,7 @@
 			</div>
 			<div class='form-group '>
 				<label for='comment'>Kommentar</label>
-				<textarea class='form-control comment' rows='2' name='comment' >{{coment}}</textarea>
+				<textarea class='form-control comment' rows='2' name='comment' >{{comment}}</textarea>
 			</div>
 
 			<div class='form-group '>
@@ -23,10 +23,10 @@
 
 			<div class='form-group'>
 				<label for='tags'>Taggar</label>
-				<input type='text' class='form-control tags' name='tags' placeholder='Skilj åt med komma t.ex. Soppa, Varmrätt, Snabbmat'>
+				<input type='text' class='form-control tags' name='tags' placeholder='Skilj åt med komma t.ex. Soppa, Varmrätt, Snabbmat' value="{{tags.toString}}">
 			</div>
 			
-			<input type='button' class='btn btn-default' value='Spara'>
+			<input type='button' class='btn btn-default updateRecipyBtn' value='Spara'>
 		</form>
 	{{/each}}
 </template>

@@ -11,6 +11,9 @@
 	<div class='comment pre'>{{comment}}</div>
 	<div class='ingrediences pre'>{{ingrediences}}</div>
 	<div class='description pre'>{{description}}</div>
+	<div class='recipyBy'>Recept av {{username}}</div>
 	<div class='tag-display'>{{tags}}</div>
-	<a href='/editRecipy/{{slug}}'>Ändra</a>
+	{{#if currentUser}}
+		<a href='/editRecipy/{{slug}}' class='btn btn-warning editRecipyBtn'><i class="glyphicon glyphicon-edit"></i>Ändra</a>
+	{{/if}}
 </template>
