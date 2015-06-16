@@ -1,6 +1,3 @@
-@Recipies = new Meteor.Collection('recipies')
-@RecipyTags = new Mongo.Collection('recipyTags')
-
 Meteor.startup ->
   Meteor.publish "recipiesByTag", (tag) ->
     Recipies.find {tags: tag}, {fields: {title: 1, comment: 1, slug: 1}}, {sort: {createdDate: 1}}
@@ -28,7 +25,24 @@ Meteor.methods
     return 
 
   createRecipy: (title, comment, ingrediences, description, tags, username, owner, slug) ->
-    console.log ('createRecipy')
+    console.dir ('createRecipy')
+
+    console.dir 'Slug is ' + slug
+
+    hasSlug = false
+    slugCount = 0
+    loop
+        foundSlugs = Recipies.find(slug: slug).count()
+        console.log 'Found slugs ' + foundSlugs
+        if foundSlugs == 0
+            console.dir 'Unique slug. Breaking out'
+            break
+        else
+            console.dir 'Slug exists'
+            hasSlug = true
+            slugCount = slugCount + 1
+            slug = slug + slugCount
+            console.dir 'New slug is ' + slug
 
     Recipies.insert
       title: title,

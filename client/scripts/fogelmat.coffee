@@ -1,14 +1,7 @@
-# Use Swedish translation for login/sign up
-accountsUIBootstrap3.setLanguage('sv')
-
-#Username and email used for accounts
-Accounts.ui.config
-  passwordSignupFields: "USERNAME_AND_EMAIL"
-
 Template.editRecipy.events
     'click .updateRecipyBtn': (event, template) ->
         event.preventDefault
-        
+
         tags = new Array()
         title = template.find(".title").value
         comment = template.find(".comment").value
@@ -52,7 +45,7 @@ Template.addRecipy.events
             if tag
                 taglist.push tag
 
-    slug = slugify(title + ' ' + template.find(".tags").value + ' ' + ingrediences.split(' '))
+    slug = slugify(title + ' ' + template.find(".tags").value)
 
     Meteor.call 'createRecipyTags', taglist, (error) ->
     Meteor.call 'createRecipy', title, comment, ingrediences, description, taglist, username, owner, slug, (error) ->
