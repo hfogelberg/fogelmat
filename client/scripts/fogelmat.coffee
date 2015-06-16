@@ -8,15 +8,13 @@ Accounts.ui.config
 Template.editRecipy.events
     'click .updateRecipyBtn': (event, template) ->
         event.preventDefault
-        alert 'Update'
+        
         tags = new Array()
         title = template.find(".title").value
         comment = template.find(".comment").value
         ingrediences = template.find(".ingrediences").value
         description = template.find(".description").value
         slug = Session.get 'slug'
-
-        alert "Slug: #{slug}"
 
         taglist = []
         tags = template.find(".tags").value.split(',')
@@ -43,8 +41,6 @@ Template.addRecipy.events
     
     owner = Meteor.userId()
     username = Meteor.user().username
-
-    alert "#{owner} #{username}"
 
     #Split string to array, remove any white space and capitalize first letter
     taglist = []
