@@ -6,18 +6,18 @@ i18n.map 'sv',
     cancel: 'Avbryt'
     submit: 'Ändra lösenord'
   enrollAccountDialog:
-    title: 'Passwort wählen'
-    newPassword: 'Neues Passwort'
-    newPasswordAgain: 'Neues Passwort (wiederholen)'
-    cancel: 'Schließen'
-    submit: 'Passwort ändern'
+    title: 'ANge lösenord'
+    newPassword: 'Nytt lösenord'
+    newPasswordAgain: 'Upprepa lösenord'
+    cancel: 'Avbryt'
+    submit: 'Ändra lösenord'
   justVerifiedEmailDialog:
-    verified: 'Email Adresse verifiziert'
-    dismiss: 'Schließen'
-  loginButtonsMessagesDialog: dismiss: 'Schließen'
+    verified: 'Epost adress bekräftad'
+    dismiss: 'Avbryt'
+  loginButtonsMessagesDialog: dismiss: 'Avbryt'
   loginButtonsLoggedInDropdownActions:
-    password: 'Passwort ändern'
-    signOut: 'Abmelden'
+    password: 'Ändra lösenord'
+    signOut: 'Logga ut'
   loginButtonsLoggedOutDropdown:
     signIn: 'Logga in'
     up: 'Skapa konto'
@@ -30,16 +30,16 @@ i18n.map 'sv',
   forgotPasswordForm:
     email: 'Email'
     reset: 'Återställ lösenord'
-    invalidEmail: 'Ungültige Email Adresse'
-  loginButtonsBackToLoginLink: back: 'Abbrechen'
+    invalidEmail: 'Ogiltig epostadress'
+  loginButtonsBackToLoginLink: back: 'Åter'
   loginButtonsChangePassword:
     submit: 'Ändra lösenord'
     cancel: 'Avbryt'
   loginButtonsLoggedOutSingleLoginButton:
-    signInWith: 'Anmelden mit'
-    configure: 'Ställ in'
-  loginButtonsLoggedInSingleLogoutButton: signOut: 'Abmelden'
-  loginButtonsLoggedOut: noLoginServices: 'Keine Anmelde Services konfiguriert'
+    signInWith: 'Logga in med'
+    configure: 'Ändra'
+  loginButtonsLoggedInSingleLogoutButton: signOut: 'Logga ut'
+  loginButtonsLoggedOut: noLoginServices: 'Ingen inloggningstjänst inställd'
   loginFields:
     usernameOrEmail: 'Användarnamn eller Epost'
     username: 'Användarnamn'
@@ -48,7 +48,7 @@ i18n.map 'sv',
   signupFields:
     username: 'Användarnamn'
     email: 'Epost'
-    emailOpt: 'Email (freiwillig)'
+    emailOpt: 'Frivillig postadress'
     password: 'Lösenord'
     passwordAgain: 'Upprepa lösenord'
   changePasswordFields:
@@ -59,10 +59,10 @@ i18n.map 'sv',
     sent: 'Epost sänt'
     passwordChanged: 'LÖsenord ändrat'
   errorMessages:
-    userNotFound: 'Benutzer nicht gefunden'
-    invalidEmail: 'Ungültige Email Adresse'
-    incorrectPassword: 'Falsches Passwort'
-    usernameTooShort: 'Der Benutzername muss mindestens 3 Buchstaben lang sein'
-    passwordTooShort: 'Passwort muss mindestens 6 Zeichen lang sein'
-    passwordsDontMatch: 'Die Passwörter stimmen nicht überein'
-    newPasswordSameAsOld: 'Neue und aktuelle Passwörter müssen unterschiedlich sein'
+    userNotFound: 'Ingen användare funnen'
+    invalidEmail: 'Ogiltig epostadress'
+    incorrectPassword: 'Felaktigt lösenord'
+    usernameTooShort: 'Användarnamnet måste vara minst tre tecken långt'
+    passwordTooShort: 'Lösenordet måste vara minst sex tecken långt'
+    passwordsDontMatch: 'Lösenorden stämmer inte överens'
+    newPasswordSameAsOld: 'Det nya lösenordet får inte vara samma som det gamla'
