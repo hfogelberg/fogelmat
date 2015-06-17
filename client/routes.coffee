@@ -1,6 +1,3 @@
-@Recipies = new Meteor.Collection('recipies')
-@RecipyTags = new Mongo.Collection('recipyTags')
-
 Router.configure layoutTemplate: 'layout'
 Router.map ->
   @route 'home', 

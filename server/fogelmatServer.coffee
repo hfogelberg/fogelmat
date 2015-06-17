@@ -1,9 +1,11 @@
 Meteor.startup ->
   Meteor.publish "recipiesByTag", (tag) ->
-    Recipies.find {tags: tag}, {fields: {title: 1, comment: 1, slug: 1}}, {sort: {createdDate: 1}}
+    Recipies.find {tags: tag}
+    #Recipies.find {tags: tag}, {fields: {title: 1, comment: 1, slug: 1}}, {sort: {createdDate: 1}}
     
   Meteor.publish "recipies", ->
-    Recipies.find {}, {fields: {title: 1, comment: 1, slug: 1}}, {sort: {createdDate: -1}}
+    Recipies.find {}, {sort: {createdDate: -1}}
+    #Recipies.find {}, {fields: {title: 1, comment: 1, slug: 1}}, {sort: {createdDate: -1}}
     #Recipies.find {}, {limit: 5}, {fields: {title: 1, comment: 1, slug: 1}}
 
   Meteor.publish "tags", ->

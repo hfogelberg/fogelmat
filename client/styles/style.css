@@ -52,11 +52,7 @@ i {
 	color: gray;
 }
 
-.editRecipyBtn {
-	margin-top: 20px;
-}
-
-.updateRecipyBtn {
+.btn {
 	margin-top: 20px;
 }
 
@@ -64,3 +60,8 @@ i {
   unicode-bidi: bidi-override;
   direction: rtl;
  }
+
+ .details {
+ 		display: none;
+ }
+
