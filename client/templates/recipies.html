@@ -1,7 +1,7 @@
 <template name='recipies'>
 	<div class='row'>
-		<div class='col-xs-2'>
-			<ul>
+		<div class='col-xs-2 navbar-collapse collapse'>
+			<ul class="nav nav-pills nav-stacked">
 				{{#each tags}}
 					{{> tag}}
 				{{/each}}
@@ -47,5 +47,5 @@
 
 
 <template name='tag'>
-	<li class='list-unstyled text-info '><a class='tag-list' href='/recipies/{{name}}'>{{name}}</a></li>
+	<li class='list-unstyled text-info' role="presentation"><a class='tag-list' href='/recipies/{{name}}'>{{name}}</a></li>
 </template>
