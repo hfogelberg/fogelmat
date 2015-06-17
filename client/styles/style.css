@@ -1,3 +1,21 @@
+body {
+	background-color: #E3F4B2;
+}
+
+.page-title {
+	font-family: 'Rock Salt', cursive;
+	font-size: 80px;
+	text-align: center;
+}
+
+.recipy-title {
+	font-family: 'Rock Salt', cursive;
+}
+
+.tag-list { 
+	font-family: 'Rock Salt', cursive;
+}
+
 i {
 	margin-right: 5px;
 }
@@ -7,6 +25,16 @@ i {
   box-shadow: 0 0 5px gray;
 }
 
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.well {
+   background-color: rgba(245, 245, 245, 0.4);
+}
+.navbar li { color: #000 } 
 .container{
 	margin-left: 20px;
 	margin-right: 20px;
