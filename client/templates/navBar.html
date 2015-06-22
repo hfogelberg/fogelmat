@@ -15,8 +15,8 @@
                     <a href="/"><i class="glyphicon glyphicon-home"></i>Recept</a>
                 </li>
                 {{#if currentUser}}
-                    <li><a href="/addRecipy"><i class="glyphicon glyphicon-book"></i>   Nytt recept</a>
-                    </li>
+                    <li><a href="/addRecipy"><i class="glyphicon glyphicon-book"></i>Nytt recept</a></li>
+                    <li><a href="/users/{{currentUser.username}}">Mina recept</a></li>
                 {{/if}}
             </ul>
             <ul class="nav navbar-nav navbar-right">{{> loginButtons}}</ul>

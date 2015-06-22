@@ -72,9 +72,10 @@ i {
 }
 
 .pre {
-  white-space: pre;
-	word-wrap: natural;
-	word-break: natural;
+	width: 100%;
+  white-space: pre pre-line;
+	word-wrap: normal;
+
 }
 
 .footer a {
