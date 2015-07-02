@@ -43,6 +43,15 @@ Router.map ->
     data: recipyList: ->
       Recipies.find()
 
+  @route 'recipiesByUser',
+    path: 'users/:username',
+    template: 'recipiesByUser'
+    waitOn: ->
+      @subscribe 'recipyByUser', @params.username
+    data: recipyList: ->
+      Recipies.find()
+
+
   @route 'about'
 
   @route 'addRecipy'

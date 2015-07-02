@@ -1,0 +1,7 @@
+<template name='recipiesByUser'>
+	<h1>Recept av {{currentUser.username}}</h1>
+
+	{{#each recipyList}}
+		{{> recipy}}
+	{{/each}}
+</template>

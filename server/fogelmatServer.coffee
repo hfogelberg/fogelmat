@@ -14,6 +14,9 @@ Meteor.startup ->
   Meteor.publish "recipy", (slug) ->
     Recipies.find slug: slug
 
+  Meteor.publish "recipyByUser", (username) ->
+    Recipies.find username: username
+
 Meteor.methods  
   createRecipyTags: (tags) ->   
     console.log 'createRecipyTags called'
