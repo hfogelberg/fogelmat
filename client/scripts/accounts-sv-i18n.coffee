@@ -6,7 +6,7 @@ i18n.map 'sv',
     cancel: 'Avbryt'
     submit: 'Ändra lösenord'
   enrollAccountDialog:
-    title: 'ANge lösenord'
+    title: 'Ange lösenord'
     newPassword: 'Nytt lösenord'
     newPasswordAgain: 'Upprepa lösenord'
     cancel: 'Avbryt'
