@@ -6,16 +6,18 @@ This is my first attempt to write a "real" application with Meteor.js.
 
 Coffeescript is used to make the code more readable imho.
 
-## Installation packages
+## Dependecies
 
-* `meteor add coffeescript`
-* `meteor add mizzao:bootstrap-3`
-* `meteor add iron:router`
-* `meteor add yasaricli:slugify`
-* `meteor add multiply:iron-router-progress`
-* `meteor add mrt:jqbootstrapvalidation`
-* `meteor add accounts-password`
-* `meteor add accounts-ui-unstyled`
-* `mrt add accounts-ui-bootstrap-3`
-* `mrt add accounts-admin-ui-bootstrap-3`
-* `meteor add roles`
+* accounts-password
+* anti:i18n
+* coffeescript
+* ian:accounts-ui-bootstrap-3
+* iron:router
+* linto:jquery-ui
+* meteor-platform
+* multiply:iron-router-progress
+* raix:handlebar-helpers
+* sergeyt:typeahead
+* showdown
+* twbs:bootstrap
+* yasaricli:slugify
