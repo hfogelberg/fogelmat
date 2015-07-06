@@ -54,14 +54,12 @@ Router.map ->
 
   @route 'about'
 
-  @route 'addRecipy'
+  @route 'addRecipy',
+    waitOn:->
+      @subscribe 'tags'
+    data: tags: ->
+      RecipyTags.find()
 
   @route 'contact'
   
   return
-
-
-
-
-# waitOn: ->
-#   return [Meteor.subscribe('recipies'), Meteor.subscribe('tags')]

@@ -23,7 +23,9 @@
 
 			<div class='form-group'>
 				<label for='tags'>Taggar</label>
-				<input type='text' class='form-control tags' name='tags' placeholder='Skilj åt med komma t.ex. Soppa, Varmrätt, Snabbmat'>
+        <input class="form-control typeahead tags" name="tags" type="text"
+                       autocomplete="off" spellcheck="off"
+                                     data-source="tags"/>
 			</div>
 			<input type='button' class='btn btn-default addRecipy glyphicon glyphicon-edit' value='Spara'>
 		</form>
