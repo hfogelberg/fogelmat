@@ -8,9 +8,9 @@
 	<div class='page-header'>
 		<h1>{{title}}</h1>
 	</div>
-	<div class='comment pre lead'>{{comment}}</div>
-	<div class='ingrediences pre'>{{ingrediences}}</div>
-	<div class='description pre'>{{description}}</div>
+	<div class='comment pre lead'>{{#markdown}}{{comment}}{{/markdown}}</div>
+	<div class='ingrediences pre'>{{#markdown}}{{ingrediences}}{{/markdown}}</div>
+	<div class='description pre'>{{#markdown}}{{description}}{{/markdown}}</div>
 	<div class='recipyBy'>Recept av {{username}}</div>
 	<div class='tag-display'>{{tags}}</div>
 	{{#if currentUser}}
