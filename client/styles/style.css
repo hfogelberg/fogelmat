@@ -9,14 +9,23 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebd5b2', endColorstr='#f4e3c7', GradientType=0 );
 }
 
+h1 {
+	color: #FF9900
+}
+
 .container {
 	margin-right: 10px;
 }
 
 .page-title {
 	font-family: 'Rock Salt', cursive;
-	font-size: 80px;
 	text-align: center;
+/*	background-color: rgba(245, 245, 245, 0.4);
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 25px;
+	box-shadow:10px 10px 50px 20px gray inset;  */
 }
 
 .recipy-title {
@@ -37,16 +46,6 @@ i {
   box-shadow: 0 0 5px gray;
 }
 
-.title {
-	padding: 10px;
-   background-color: rgba(245, 245, 245, 0.4);
-   margin-left: 5 auto;
-   margin-right: 5 auto;
-   margin-bottom: 5px;
-   border-radius: 25px;
-	 box-shadow:10px 10px 50px 20px gray inset;   
-}
-
 .navbar {
    background-color: transparent;
    background: transparent;
@@ -64,7 +63,7 @@ i {
 	margin-right: 0 auto;
 	margin-bottom: 10px;
 	border-radius: 25px;
-	box-shadow:10px 10px 50px 20px gray inset;
+	box-shadow:8px 8px 20px 15px gray inset;
 	display:inline-block; 
 }
 
