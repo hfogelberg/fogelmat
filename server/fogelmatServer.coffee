@@ -23,14 +23,9 @@ Meteor.methods
         console.log 'Insert tag'
         RecipyTags.insert
           name: tag
-
     return 
 
   createRecipy: (title, comment, ingrediences, description, tags, username, owner, slug) ->
-    console.dir ('createRecipy')
-
-    console.dir 'Slug is ' + slug
-
     hasSlug = false
     slugCount = 0
     loop
