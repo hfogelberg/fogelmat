@@ -1,12 +1,12 @@
 <template name='recipy'>
 	<div class='well'>
 		<h2 class='recipy-title'>{{title}}</h2>
-		<div class='displayComment pre'>{{comment}}</div>
+		<div class='displayComment pre mainText'>{{comment}}</div>
 		<div class='details' id="{{slug}}">
-			<div class='ingrediences pre'>{{ingrediences}}</div>
-			<div class='description pre'>{{description}}</div>
-			<div class='recipyBy'>Recept av <a href="users/{{currentUser.username}}">{{username}}</a></div>
-			<div class='tag-display'>{{tags}}</div>
+			<div class='ingrediences pre mainText'>{{ingrediences}}</div>
+			<div class='description pre mainText'>{{description}}</div>
+			<div class='recipyBy mainText'>Recept av <a href="users/{{currentUser.username}}">{{username}}</a></div>
+			<div class='tag-display mainText'>{{tags}}</div>
 
 			{{#if $eq currentUser.username username}}
 				<a href='/editRecipy/{{slug}}' class='btn btn-warning editRecipyBtn'><i class="glyphicon glyphicon-edit"></i>Ändra</a>

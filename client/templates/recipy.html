@@ -8,11 +8,11 @@
 	<div class='page-header'>
 		<h1>{{title}}</h1>
 	</div>
-	<div class='comment pre lead'>{{#markdown}}{{comment}}{{/markdown}}</div>
-	<div class='ingrediences pre'>{{#markdown}}{{ingrediences}}{{/markdown}}</div>
-	<div class='description pre'>{{#markdown}}{{description}}{{/markdown}}</div>
-	<div class='recipyBy'>Recept av {{username}}</div>
-	<div class='tag-display'>{{tags}}</div>
+	<div class='comment pre lead mainText'>{{#markdown}}{{comment}}{{/markdown}}</div>
+	<div class='ingrediences pre mainText'>{{#markdown}}{{ingrediences}}{{/markdown}}</div>
+	<div class='description pre mainText'>{{#markdown}}{{description}}{{/markdown}}</div>
+	<div class='recipyBy mainText'>Recept av {{username}}</div>
+	<div class='tag-display mainText'>{{tags}}</div>
 	{{#if currentUser}}
 		<a href='/editRecipy/{{slug}}' class='btn btn-warning editRecipyBtn'><i class="glyphicon glyphicon-edit"></i>Ändra</a>
 	{{/if}}
