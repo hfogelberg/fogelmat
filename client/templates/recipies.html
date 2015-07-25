@@ -1,17 +1,16 @@
 <template name='recipies'>
-	<div class='row'>
-		<div class='col-xs-2 navbar-collapse collapse'>
-			<ul class="nav nav-pills nav-stacked recipies">
-				{{#each tags}}
-					{{> tag}}
-				{{/each}}
-			</ul>
-		</div>
-
+	<div class='row recipies'>
 		<div class='col-xs-10'>
 			{{#each recipyList}}
 				{{> recipy}}
 			{{/each}}
+		</div>
+		<div class='col-xs-2 navbar-collapse collapse'>
+			<ul class="nav nav-pills nav-stacked">
+				{{#each tags}}
+					{{> tag}}
+				{{/each}}
+			</ul>
 		</div>
 	</div>
 
