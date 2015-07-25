@@ -9,6 +9,10 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebd5b2', endColorstr='#f4e3c7', GradientType=0 );
 }
 
+.container {
+	margin-right: 10px;
+}
+
 .page-title {
 	font-family: 'Rock Salt', cursive;
 	font-size: 80px;
@@ -33,15 +37,37 @@ i {
   box-shadow: 0 0 5px gray;
 }
 
+.title {
+	padding: 10px;
+   background-color: rgba(245, 245, 245, 0.4);
+   margin-left: 5 auto;
+   margin-right: 5 auto;
+   margin-bottom: 5px;
+   border-radius: 25px;
+	 box-shadow:10px 10px 50px 20px gray inset;   
+}
+
 .navbar {
    background-color: transparent;
    background: transparent;
    border-color: transparent;
 }
 
-.well {
-   background-color: rgba(245, 245, 245, 0.4);
+.recipies {  
+	 display:inline-block; 
 }
+
+.recipy {
+	padding: 10px;
+	background-color: rgba(245, 245, 245, 0.4);
+	margin-left: 0;
+	margin-right: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 25px;
+	box-shadow:10px 10px 50px 20px gray inset;
+	display:inline-block; 
+}
+
 .navbar li { color: #000 } 
 .container{
 	margin-left: 20px;
@@ -99,5 +125,10 @@ i {
 
  .details {
  		display: none;
+ }
+
+ .expandBtn {
+ 	float: right;
+ 	background-color: #CC7A00;
  }
 
