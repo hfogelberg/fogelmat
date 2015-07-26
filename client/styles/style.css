@@ -13,10 +13,6 @@ h1 {
 	color: #FF9900
 }
 
-.container {
-	margin-right: 10px;
-}
-
 .page-title {
 	font-family: 'Rock Salt', cursive;
 	text-align: center;
@@ -52,26 +48,24 @@ i {
    border-color: transparent;
 }
 
-.recipies {  
-	 display:inline-block; 
-}
+/*.recipies {  
+	 display: inline; 
+}*/
 
 .recipy {
 	padding: 10px;
 	background-color: rgba(245, 245, 245, 0.4);
-	margin-left: 0;
+	margin-left: 10px;
 	margin-right: 0 auto;
 	margin-bottom: 10px;
 	border-radius: 25px;
 	box-shadow:8px 8px 20px 15px gray inset;
-	display:inline-block; 
+	display: block; 
 }
 
-.navbar li { color: #000 } 
-.container{
-	margin-left: 20px;
-	margin-right: 20px;
-}
+.navbar li { 
+	color: #000 
+} 
 
 .displayComment {
 	margin-top: 10px;
@@ -127,7 +121,7 @@ i {
  }
 
  .expandBtn {
- 	float: right;
+ 	/*float: right;*/
  	background-color: #CC7A00;
  }
 

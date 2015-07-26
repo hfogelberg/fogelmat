@@ -1,12 +1,12 @@
 <template name='recipies'>
 	<div class='row recipies'>
-		<div class='col-xs-10'>
+		<div class='col-xs-12 col-md-10 col-lg-10'>
 			{{#each recipyList}}
 				{{> recipy}}
 			{{/each}}
 		</div>
-		<div class='col-xs-2 navbar-collapse collapse'>
-			<ul class="nav nav-pills nav-stacked">
+		<div class='col xs-0 col-md-2 col-lg-2 '>
+			<ul class="navbar-collapse collapse nav nav-pills nav-stacked">
 				{{#each tags}}
 					{{> tag}}
 				{{/each}}
